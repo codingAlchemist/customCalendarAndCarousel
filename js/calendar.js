@@ -1,13 +1,18 @@
-var calendar = function(Month){
+
+
+
+var calDate = new Date();
+var calYear = calDate.getFullYear();
+var calMonth = calDate.getMonth();
+
+var calendar = function(Month, CalDiv){
 
 	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	var days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-	
-	
 	var today = new Date();
 	var dd = today.getDate();
 	var mm;
-	if (Month == "" ) {
+	if (Month == "") {
 		console.log("month is null");
 		mm = today.getMonth();
 	}else{
@@ -17,14 +22,43 @@ var calendar = function(Month){
 	
 	var day_name = today.getDay();
 	var yyyy = today.getFullYear();
-
 	var startDay = new Date(2015,mm,1);	
 	
 	$('<div/>',{
 		id: 'calendar'
-	}).appendTo('#theCalendar');
-	
-	
+	}).appendTo(CalDiv);
+
+	$('<button/>',{
+		id: 'prevMonth',
+		text: "Prev"
+	}).appendTo("#calendar");
+
+	$('<button/>',{
+		id: 'nextMonth',
+		text: "Next"
+	}).appendTo("#calendar");
+
+	$("#nextMonth").click(function(){
+		console.log("clicking next month");
+		if(calMonth < 11){
+			calMonth = calMonth + 1;
+			$('#calendar').remove();
+			$("#calendar_mobile").remove();
+			var customCal = new calendar(calMonth,$('#theCalendar'));
+		}
+		
+	});
+
+	$("#prevMonth").click(function(){
+		console.log("clicking next month");
+		if(calMonth > 0){
+			calMonth = calMonth - 1;
+			$('#calendar').remove();
+			$("#calendar_mobile").remove();
+			var customCal = new calendar(calMonth,$('#theCalendar'));
+		}
+		
+	});
 	$('<div/>',{
 		id:'month'
 	}).appendTo('#calendar').addClass('month');
@@ -66,7 +100,7 @@ var calendar = function(Month){
 			$('#day'+i).removeClass('day').addClass('current_day');
 		};
 	}	
-		
+
 	var theDay = startDay.getDay();
 	var dayNamed = days[theDay];
 	var dayInc = 0;
@@ -108,5 +142,11 @@ $(window).load(function(){
 		$('#calendar').css('display','block');
 	}
 });
+
+
+
+
+var customCal = new calendar(calMonth,$('#theCalendar'));
+
 
 

@@ -15,4 +15,3 @@ $(window).load(function(){
 	}
 });
 
-var customCal = new calendar(3);

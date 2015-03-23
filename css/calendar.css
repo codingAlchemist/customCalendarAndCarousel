@@ -73,3 +73,17 @@
 	border-radius: 5px;
 }
 
+#prevMonth{
+	width: 80px;
+	height: 40px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+#nextMonth{
+	width: 80px;
+	height: 40px;
+	margin-right: 15px;
+	margin-top: 15px;
+	
+}

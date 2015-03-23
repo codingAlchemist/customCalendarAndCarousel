@@ -66,7 +66,7 @@ var calendar = function(Month){
 	var dayNum = Math.round((test - new Date(test.getFullYear(),test.getMonth()-1))/8640000) / 10;
 	var dayInc = 0;
 
-	$('#month').text(months[setMonth]);
+	$('#month').text(months[mm]);
 	console.log("number of days ->"+dayNum);
 	console.log("the day will be " + dayNamed);
 	
@@ -109,4 +109,4 @@ $(window).load(function(){
 	}
 });
 
-test
+

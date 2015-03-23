@@ -1,0 +1,75 @@
+
+.month{
+ 	width: 800px;
+ 	height: 30px;
+ 	text-align: center;
+ 	font-style: italic;
+ 	font-size: 13pt;
+}
+
+.weekday{
+	float: left;
+	font-size: 12pt;
+	width: 110px;
+	text-align: center;
+	height: 30px;
+	border: 1px solid black;
+	padding: 5px 13px 5px 13px;
+	min-width: 100px;
+}
+
+.day{
+	float: left;
+	width: 110px;
+	height: 110px;
+	border:1px solid black;
+}
+
+.current_day{
+	float: left;
+	width: 110px;
+	height: 110px;
+	border:1px solid black;
+	background-color: yellow;
+}
+
+#calendar{
+	width: 800px;
+	height:800px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border:1px solid black;
+	border-radius: 5px;
+	min-width: 600px;
+}
+
+#day_row{
+	height: 30px;
+	width: 770px;
+	min-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#calendar_body{
+	height: 550px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-left: 14px;
+}
+
+#calendar_mobile{
+	width: 90%;
+	height:500px;
+	display: block;
+	margin-right: auto;
+	margin-left:auto;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+

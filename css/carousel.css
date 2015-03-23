@@ -1,0 +1,74 @@
+.carousel_container{
+	position: relative;
+	width: 1000px;
+	height: 200px;
+	background-color: black;
+	display: block;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 0
+}
+
+.img_Container0{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: cyan;
+	left: 0px;
+	z-index: 1;
+}
+.img_Container1{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: red;
+	left: 0px;
+	margin-top: -200px;
+	z-index: 2;
+}
+.img_Container2{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: blue;
+	margin-top: -200px;
+	margin-left: 200px;
+	z-index: 2;
+}
+.img_Container3{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: yellow;
+	margin-top: -200px;
+	margin-left: 400px;
+	z-index: 2;
+}
+.img_Container4{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: purple;
+	margin-top: -200px;
+	margin-left: 600px;
+	z-index: 2;
+}
+.img_Container5{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: green;
+	margin-top: -0px;
+	left: 800px;
+	z-index: 2;
+}
+.img_Container6{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: gray;
+	margin-top: -200px;
+	margin-left: 800px;
+	z-index: 1;
+}
